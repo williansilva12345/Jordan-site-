@@ -3,81 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loader Exemplo</title>
-    <link rel="stylesheet" href="projeto.css"> <!-- Aqui está a tag link para o CSS -->
-
+    <title>Jordan Layout</title>
+    <link rel="stylesheet" href="projeto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" rel="stylesheet" />
 </head>
 <body>
-	
-	
-	<header>
+    <header>
+        <ul> 
+            <li><a href="#home"><span class="material-icons">home</span>Home</a></li> 
+            <li><a href="#favoritos"><span class="material-icons">star</span>Sobre</a></li> 
+            <li><a href="#sapatos"><span class="material-symbols-outlined">shopping_cart</span>Sapatos</a></li> 
+        </ul>
+        <div class="config">
+            <ul>
+                <li id="config2"><a href="#"><span class="material-icons">settings</span></a></li>
+            </ul>
+        </div>
+    </header>
 
-						<li> <a href="">Home</a></li>
+    <main>
+        <section id="home" class="section1">
+            <div class="flex">
+                <img id="logo2" src="./logo2.png" alt="Logo">
+            </div>
+        </section>
+        
+        <section id="favoritos" class="section">
+            <article id="textoul" data-anima="esquerda">
+                <h1 data-text="Sobre Jordan" id="jordan">Sobre Jordan</h1>
+                <ul>
+                    <li><strong>Air Jordan 1:</strong> Lançado em 1985, é um dos modelos mais icônicos.</li>
+                    <li><strong>Air Jordan 3:</strong> Introduzido em 1988, foi o primeiro a apresentar o logo Jumpman.</li>
+                    <li><strong>Air Jordan 11:</strong> Lançado em 1995, famoso por seu visual elegante.</li>
+                    <li><strong>Air Jordan 4:</strong> Lançado em 1989, conhecido por seu conforto e suporte.</li>
+                    <li><strong>Air Jordan 6:</strong> Lançado em 1991, o modelo que Michael Jordan usou para ganhar seu primeiro campeonato.</li>
+                    <li><strong>Air Jordan 13:</strong> Lançado em 1997, tem um design inspirado em um gato selvagem.</li>
+                </ul>
+            </article>
+            
+            <article id="sapatoarticle" data-anima="direita">
+                <img src="sapato2.png" alt="Sapato">
+            </article>
+        </section>
+        
+        <section id="sapatos" class="section">
+            <article class="sapatos" data-anima="esquerda">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide active">
+                            <img src="spt1.png" alt="Sapato 1">
+                        </div>
+                        <div class="slide">
+                            <img src="spt2.png" alt="Sapato 2">
+                        </div>
+                        <div class="slide">
+                            <img src="spt3.png" alt="Sapato 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <div>
+                        <button class="prev btn" onclick="prevSlide()">&#10094;</button>
+                        <button class="next btn" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <section id="config" class="section">
+            <article data-anima="direita">
+                <h1>EM construcao </h1>
+            </article>
+        </section>
+		  	
+		<div id="dialog">
+    <div class="dialog-header">
+        <h1>Configurações</h1>
+        <button class="close-btn" id="close">×</button>
+    </div>
+    
+    <div class="dialog-content">
+        <div class="config-option">
+            <label for="element">O que deseja mudar a cor?</label>
+            <input type="text" id="element" name="element" placeholder="Digite a tag "> <br> <br>
 
-		<nav>
-		
-			 <ul>
-	
-				<li> <a href="">Videos</a></li>
-				<li> <a href="">Images</a></li>
-				<li> <a href="">Sobre</a></li>
-			
-			</ul>
-		
-		</nav>
-		
-		
-	</header>
+            <label for="color">Escolha a cor de fundo:</label>
+            <input type="color" id="color"><br><br>
+        </div>
+    </div>
+
+    <div class="dialog-footer">
+        <button id="apply" class="apply">Aplicar</button>
+    </div>
+</div>
 
 
-	<main>
-		
-		<section class="section1">
-			
-		<div class="flex">
-		
-			<div>
-			
-			<img src="./logo2.png">
-				
-			</div>
-				
-				
-				
-			<div>
-			
-			<img id="img1" src="C:\Users\Administrator\Desktop\project2\jordan1.png">
-				
-			</div>
-				
-		
-		</div>
-		
-		</section>
-		
-		
-		<section class="section">
-			
-			<p> Texto</p>
-		
-		</section>
-		
-		<section class="section">
-			
-			<p> Texto</p>
-		
-		</section>
-		
-		<section class="section">
-			
-			<p> Texto</p>
-		
-		</section>
-	
-	</main>
-	
 
-		
-	
-<script src="projeto.js"></script>
+    </main>   
+
+
+    <script src="projeto.js"></script>
 </body>
+</html>
